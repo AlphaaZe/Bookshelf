@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: #34bf46;
+    padding: 10px;
+    display: flex;
+    color: white;
+}
+nav h1 {
+    margin: 0 auto;
+}
+main {
+    padding: 20px;
+    font-weight: bold;
+}
+
+input {
+    margin: 5px 0;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 0.5px solid rgb(13, 51, 43);
+}
+
+.content {
+    margin-top: 20px;
+}
+ul li {
+    display: block;
+}
+.title {
+    font-weight: bold;
+}
+.author {
+    font-style: italic;
+    margin-top: 3px;
+    font-size: 12px;
+}
+.list-item ul {
+    align-self: center;
+}
+.list-item div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: unset;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+.list-item button {
+    padding: 10px;
+    margin: 5px;
+    border-style: none;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    background-position: center;
+    background-size: 35px;
+    background-color: unset;
+    transition: background-image 0.3s;
+}
+.btn-submit {
+    padding: 10px;
+    border-style: unset;
+    border-radius: 3px;
+    background-color: #34bf46;
+    color: white;
+}
+.bookContainer {
+    -webkit-box-shadow: 0px 2px 13px -7px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 2px 13px -7px rgba(0,0,0,0.38);
+    box-shadow: 0px 2px 13px -7px rgba(0,0,0,0.38);
+}
+
+.bookContainer ul {
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+input {
+    width: 100%;
+}
+#isCompleted {
+    width: auto;
+    margin-left: 10px;
+}
+
+#search {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #34bf46;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    color: white;
+    font-size: 13px;
+}
+
+footer a {
+    text-decoration:underline;
+    color: white;
+    font-size: 14px;
+}
+
+.delete-button {
+    background-image: url('../../assets/delete-button-outline.png');
+}
+
+.delete-button:hover {
+    background-image: url('../../assets/delete-button-fill.png');
+}
+
+.completed-button {
+    background-image: url('../../assets/completed-book-outline.png');
+}
+.completed-button:hover {
+    background-image: url('../../assets/completed-book-fill.png');
+}
+.unCompleted-button {
+    background-image: url('../../assets/uncompleted-book-outline.png');
+}
+.unCompleted-button:hover {
+    background-image: url('../../assets/uncompleted-book-fill.png');
+}
+.list-item div .button {
+    border-radius: 0;
+    background-color: unset;
+}
+.container {
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 600px) {
+    .list-item div {
+        justify-content: space-between;
+    }
+    main {
+        max-width: 678px;
+        margin: 0 auto;
+    }
+}
